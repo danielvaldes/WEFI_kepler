@@ -6,7 +6,7 @@ import { Provider, useDispatch } from "react-redux";
 import KeplerGl from "kepler.gl";
 import { addDataToMap } from "kepler.gl/actions";
 
-//f450f3bd
+
 // Kepler.gl Data processing APIs
 import Processors from 'kepler.gl/processors';
 // Sample data
@@ -85,9 +85,9 @@ function Map() {
             },
             data
           },
-          option: {
+          options: {
             centerMap: true,
-            readOnly: false
+            readOnly: true
           },
           config: myConfig
         })
