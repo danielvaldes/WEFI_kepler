@@ -1,5 +1,3 @@
-import React from 'react';
-
 const myCustomTheme = {
 	sidePanelBg: '#ffffff',
 	titleTextColor: '#000000',
