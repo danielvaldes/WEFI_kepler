@@ -19,7 +19,7 @@ const stats = () => (
 	 						 <td>Ireland</td>
 	 						 <td>80.9816</td>
 	 						 <td>
-							 	<img className="photo"  src ="https://cdn.iconscout.com/icon/free/png-256/ireland-flag-country-nation-union-empire-32996.png"/>
+							 	<img className="flag"  src ="https://cdn.iconscout.com/icon/free/png-256/ireland-flag-country-nation-union-empire-32996.png"  alt="Flag Image missing"/>
 							 </td>
 						 </tr>
 	 					 <tr>
@@ -27,7 +27,7 @@ const stats = () => (
 	 						 <td>Switzerland</td>
 	 						 <td>80.7688</td>
 	 						 <td>
-							 <img className="photo" src ="https://cdn.iconscout.com/icon/free/png-256/switzerland-flag-country-nation-union-empire-33095.png"/>
+							 <img className="flag" src ="https://cdn.iconscout.com/icon/free/png-256/switzerland-flag-country-nation-union-empire-33095.png" alt="Flag Image missing"/>
 							</td>
 	 					 </tr>
 	 					 <tr>
@@ -35,7 +35,7 @@ const stats = () => (
 	 						 <td>Finland</td>
 	 						 <td>79.9572</td>
 	 						 <td>
-							 	<img className="photo" src ="https://icons.iconarchive.com/icons/wikipedia/flags/256/FI-Finland-Flag-icon.png"/>
+							 	<img className="flag" src ="https://icons.iconarchive.com/icons/wikipedia/flags/256/FI-Finland-Flag-icon.png" alt="Flag Image missing"/>
 							 </td>
 	 					 </tr>
 	 					 <tr>
@@ -43,7 +43,7 @@ const stats = () => (
 	 						 <td>Iceland</td>
 	 						 <td>79.5911</td>
 	 						 <td>
-							 	<img className="photo" src ="https://www.emoji.co.uk/files/apple-emojis/flags-ios/1111-flag-of-iceland.png"/>
+							 	<img className="flag" src ="https://www.emoji.co.uk/files/apple-emojis/flags-ios/1111-flag-of-iceland.png" alt="Flag Image missing"/>
 						 	 </td>
 	 					 </tr>
 	 					 <tr>
@@ -51,7 +51,7 @@ const stats = () => (
 	 						 <td>Denmark</td>
 	 						 <td>77.8312</td>
 	 						 <td>
-							 <img className="photo" src ="https://icons.iconarchive.com/icons/wikipedia/flags/256/DK-Denmark-Flag-icon.png"/>
+							 <img className="flag" src ="https://icons.iconarchive.com/icons/wikipedia/flags/256/DK-Denmark-Flag-icon.png" alt="Flag Image missing"/>
 							</td>
 	 					 </tr>
 	 				 </tbody>

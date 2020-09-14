@@ -151,10 +151,10 @@ const myConfig =
     {
       "bearing":0,
       "dragRotate":false,
-      "latitude":3.411007793051011,
-      "longitude":-28.82812500004583,
+      "latitude":-22.848217,
+      "longitude":28.384966,
       "pitch":0,
-      "zoom":6,
+      "zoom":1,
       "isSplit":false
     },
     //mapStyle  -

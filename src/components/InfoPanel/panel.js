@@ -35,17 +35,8 @@ const panel = () => {
 
 						<Stats/>
 
-						<view style = {{flex: 3, justifyContent: 'space-between', flexDirection: 'column'}}>
-							<view style = {{flex: 1, backgroundColor: 'blue'}}>
-							<br></br>I want to add Data
-							</view>
-							<view style = {{flex: 1, backgroundColor: 'red'}}>
-							<br></br>Maybe have queues
-							</view>
-							<view style = {{flex: 1, backgroundColor: 'green'}}>
-							<br></br>or just images of countries and stats
-							</view>
-						</view>
+						<br></br>
+
 						<p>Here I can probably include images and or labels</p>
 
 
