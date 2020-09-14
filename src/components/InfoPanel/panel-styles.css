@@ -8,10 +8,8 @@
 	width: 256px;
 	min-width: 256px;
 
-	height: calc(95%);
 
-
-	background: rgba(37,37,37,0.7);
+	background: rgba(37,37,37,0.8);
 
 	border: 10px solid #252525;
 
@@ -45,22 +43,12 @@
 }
 
 
-.flag {
-		 height: 25px;
-		 width: 25px;
-	   left: 10px;
-		padding:  5px 25px;
-}
-
 .panel footer  {
 	text-align: center;
-
+ 	background: #252525;
 	font-size: 12px;
 
 }
-
-
-
 
 .panel main {
 	text-align: center;
@@ -100,6 +88,14 @@
 	animation: spin 2s linear infinite;
 	-webkit-animation: spin 2s linear infinite; /* Safari */
 }
+
+.flag {
+		 height: 25px;
+		 width: 25px;
+	   left: 10px;
+		padding:  5px 25px;
+}
+
 
 @keyframes spin {
   0% { transform: rotate(0deg); }

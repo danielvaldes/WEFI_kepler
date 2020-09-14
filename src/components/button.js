@@ -13,7 +13,7 @@ const buttonStyle = {
   border: 0,
   borderRadius: '3px',
   fontSize: '12px',
-  margin:'30px',
+  margin:'10px',
 };
 
 const Button = ({onClick, children}) => (

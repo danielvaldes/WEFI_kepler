@@ -18,6 +18,7 @@ import wefiData from './data/data.csv';
 //style Designs
 import myMapConfig from './components/mapConfig';
 import InfoPanel from './components/InfoPanel/panel';
+import Button from './components/button';
 
 
 //////////////////////////////////////////////////////////
@@ -47,7 +48,19 @@ export default function App() {
 }
 
 
-
+function swapData () {
+  return (
+    <div>
+      <script>
+        ans = prompt("you have clicked me, what shall I do? ")
+        if(ans)
+        {
+          alert("I am a button, \nwhat shall I do?")
+        }
+        </script>
+    </div>
+  )
+}
 
 
 
@@ -82,6 +95,7 @@ function Map() {
         {({height, width}) => (
           <Fragment>
             <InfoPanel/>
+            <Button onClick= {() => swapData()} >change </Button>
             <KeplerGl
               id="WEFI_2019"
               mapboxApiAccessToken={'pk.eyJ1IjoibW9ub3NhaWNvbCIsImEiOiJja2Rldm1sYmowYWs2MnVwZnl0MXd4MzNjIn0.H1-Azok6VhC8vsMbz9RFLg'}
