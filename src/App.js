@@ -6,6 +6,8 @@ import { Provider, useDispatch } from "react-redux";
 import KeplerGl from "kepler.gl";
 import { addDataToMap } from "kepler.gl/actions";
 
+//Map window resizer
+import AutoSizer from "react-virtualized/dist/commonjs/AutoSizer";
 
 // Kepler.gl Data processing APIs
 import Processors from 'kepler.gl/processors';
@@ -75,16 +77,20 @@ function Map() {
       );
   }, [dispatch, data]);
   return (
-    <div>
-      <Fragment>
-        <InfoPanel/>
-        <KeplerGl
-          id="WEFI_2019"
-          mapboxApiAccessToken={'pk.eyJ1IjoibW9ub3NhaWNvbCIsImEiOiJja2Rldm1sYmowYWs2MnVwZnl0MXd4MzNjIn0.H1-Azok6VhC8vsMbz9RFLg'}
-          width={window.innerWidth}
-          height={window.innerHeight}
-        />
-      </Fragment>
+    <div style={{position: "absolute", width: "100%", height: "100%"}}>
+      <AutoSizer>
+        {({height, width}) => (
+          <Fragment>
+            <InfoPanel/>
+            <KeplerGl
+              id="WEFI_2019"
+              mapboxApiAccessToken={'pk.eyJ1IjoibW9ub3NhaWNvbCIsImEiOiJja2Rldm1sYmowYWs2MnVwZnl0MXd4MzNjIn0.H1-Azok6VhC8vsMbz9RFLg'}
+              width={width}
+              height={height}
+            />
+          </Fragment>
+        )}
+      </AutoSizer>
     </div>
   );
 }
