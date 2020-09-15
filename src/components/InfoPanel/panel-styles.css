@@ -22,7 +22,7 @@
 
 .panel p {
 	text-align: center;
-	color: #ffffff;
+	color: #D4A968;
 
 }
 
@@ -34,7 +34,7 @@
 
 .panel header p {
 	text-align: center;
-	color: rgba(255,255,255,0.8);
+	color: #D4A968;
 }
 
 
@@ -46,7 +46,7 @@
 
 .panel footer p {
 	text-align: left;
-	color: rgba(255,255,255,0.8);
+	color: #D4A968;
 }
 
 .panel .buttons {
@@ -56,8 +56,8 @@
 .panel button {
 	padding: 5px 10px;
 	background: #252525;
-	border: 1px solid #00939C;
-	color: #dadada;
+	border: 1px solid #ffffff;
+	color: #D4A968;
 }
 
 .panel button:hover {
