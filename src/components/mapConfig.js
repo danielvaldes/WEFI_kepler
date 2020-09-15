@@ -28,16 +28,16 @@ const myConfig =
             "isVisible":true,
             "visConfig":
             {
-              "opacity":0.8,
-              "strokeOpacity":0.8,
-              "thickness":0.5,
+              "opacity":0.4,
+              "strokeOpacity":0.4,
+              "thickness":0.25,
               "strokeColor":[255,254,213],
               "colorRange":
               {
                 "name":"Global Warming",
                 "type":"sequential",
                 "category":"Uber",
-                "colors":["#5A1846","#900C3F","#C70039","#E3611C","#F1920E","#FFC300"]
+                "colors":["#006600","#1A751A","#1AA31A","#33AD33","#33C073","#75B558","#FF7C80","#FF5050","#CD171A","#A50021"]
               },
               "strokeColorRange":
               {

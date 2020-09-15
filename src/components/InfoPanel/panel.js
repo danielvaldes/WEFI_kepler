@@ -5,8 +5,8 @@ import './panel-styles.css';
 
 import Header from './header';
 import Footer from './footer';
-import Stats from './stats';
-import label from './images/rankLabel.png';
+import Stats from  './stats';
+import label from  './images/rankLabel.png';
 
 //prompt does not behave properly
 function swapData () {
@@ -28,22 +28,18 @@ const panel = () => {
 		return (
 			<div className="panel">
 				<Header/>
-						<img src={label} alt="Rank Range Image missing" />
-						<button onClick= {() => swapData()}>
-							click
-						</button>
 
-						<Stats/>
+				<img src={label} alt="Label" />
 
-						<br></br>
+      	<button onClick= {() => swapData()}>
+					click	</button>
 
-						<p>Here I can probably include images and or labels</p>
+				<p>Here I can probably include images and or labels</p>
 
+				<button onClick= {() => swapData()}>
+					click	</button>
 
-						<button onClick= {() => swapData()}>
-							click
-						</button>
-				<Footer/>
+      	<Footer/>
 			</div>);
 };
 
