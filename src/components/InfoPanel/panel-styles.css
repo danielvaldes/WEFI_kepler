@@ -9,8 +9,8 @@
 	max-width: 256px;
 	min-width: 128px;
 
-	background: rgba(125,0,0,0.8);
-	border: 10px solid #ffffff;
+	background: rgba(125,0,0,0.2);
+	border: 2px solid #161D35;
 
 
 	font-family: 'Open Sans';
@@ -29,7 +29,7 @@
 .panel header {
 	color: #ffffff;
 	text-align: center;
-	background: rgba(0,0,255,1);
+	background: #1B2446;
 }
 
 .panel header p {
@@ -40,7 +40,7 @@
 
 .panel footer  {
 	text-align: left;
-	background: rgba(0,0,255,1);
+	background: #1B2446;
 	padding: 10%;
 }
 

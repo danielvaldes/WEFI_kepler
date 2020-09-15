@@ -5,7 +5,6 @@ import './panel-styles.css';
 
 import Header from './header';
 import Footer from './footer';
-import Stats from  './stats';
 import label from  './images/rankLabel.png';
 
 //prompt does not behave properly
@@ -34,7 +33,7 @@ const panel = () => {
       	<button onClick= {() => swapData()}>
 					click	</button>
 
-				<p>Here I can probably include images and or labels</p>
+				<p>Here I can probably include images or static tooltip</p>
 
 				<button onClick= {() => swapData()}>
 					click	</button>
