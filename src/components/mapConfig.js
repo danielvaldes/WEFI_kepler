@@ -37,7 +37,7 @@ const myConfig =
                 "name":"Global Warming",
                 "type":"sequential",
                 "category":"Uber",
-                "colors":["#006600","#1A751A","#1AA31A","#33AD33","#33C073","#75B558","#FF7C80","#FF5050","#CD171A","#A50021"]
+                "colors":["#003300","#006600","#008000","#009900","#CC6C6A","#953735","#632523","#420021"]
               },
               "strokeColorRange":
               {

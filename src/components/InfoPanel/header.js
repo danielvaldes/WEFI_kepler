@@ -2,8 +2,8 @@ import React from 'react';
 
 const header = () => (
 		<header>
-			<h2>WEFI 2019 Index</h2>
-			<p>Democracy.<br/> <small>"Electoral freedom"</small></p>
+			<h2>World Electoral Freedom Index</h2>
+			<p><small>"Indice Mundial de Libertad Electoral"</small></p>
 		</header>
 	);
 
