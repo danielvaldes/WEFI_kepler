@@ -2,6 +2,7 @@ import React from 'react';
 import './panel-styles.css';
 
 const stats = () => (
+	<div className="stats">
 		<table class="table table-bordered table-striped mb-0">
 			 <thead>
 				 <tr>
@@ -54,6 +55,7 @@ const stats = () => (
 				 </tr>
 			 </tbody>
 		 </table>
+		 </div>
 );
 
 export default stats;
