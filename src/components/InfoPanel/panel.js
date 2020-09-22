@@ -27,17 +27,12 @@ const panel = () => {
 		return (
 			<div className="panel">
 				<Header/>
-
 				<img src={label} alt="Label" />
-
       	<button onClick= {() => swapData()}>
 					click	</button>
-
 				<p>Here I can probably include images or static tooltip</p>
-
 				<button onClick= {() => swapData()}>
 					click	</button>
-
       	<Footer/>
 			</div>);
 };

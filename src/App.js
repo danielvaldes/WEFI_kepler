@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, {useEffect, Fragment} from "react";
 import keplerGlReducer from "kepler.gl/reducers";
 import { createStore, combineReducers, applyMiddleware } from "redux";
 import { taskMiddleware } from "react-palm/tasks";
@@ -10,11 +10,13 @@ import AutoSizer from "react-virtualized/dist/commonjs/AutoSizer";
 // Kepler.gl Data processing APIs
 import Processors from 'kepler.gl/processors';
 // 2019 Sample data
-import wefiData from './data/data.csv';
+import wefiData from './components/data/data.csv';
 //style Designs
 import myMapConfig from './components/mapConfig';
 import InfoPanel from './components/InfoPanel/panel';
-import Button from './components/button';
+
+import Footer from './components/Footer';
+import Header from './components/Header';
 
 //////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////
@@ -36,24 +38,10 @@ export default function App() {
       <Provider store={store}>
         <InfoPanel/>
         <Map/>
-        <Button onClick= {() => swapData()} >change </Button>
+        <Header/>
       </Provider>
     </div>
   );
-}
-
-
-function swapData () {
-/*
-  const { data } = useSwr("wefi_Data", async () => {
-  const response = await fetch(
-    "https://gist.githubusercontent.com/leighhalliday/a994915d8050e90d413515e97babd3b3/raw/a3eaaadcc784168e3845a98931780bd60afb362f/covid19.json"
-
-    //  "https://gist.githubusercontent.com/---------/------/data.json"
-    );
-    const data = await response.json();
-    return data;
-  });*/
 }
 
 
@@ -84,14 +72,39 @@ function Map() {
     <div style={{position: "absolute", width: "100%", height: "100%"}}>
       <AutoSizer>
         {({height, width}) => (
+          <Fragment>
             <KeplerGl
               id="WEFI"
               mapboxApiAccessToken={'pk.eyJ1IjoibW9ub3NhaWNvbCIsImEiOiJja2Rldm1sYmowYWs2MnVwZnl0MXd4MzNjIn0.H1-Azok6VhC8vsMbz9RFLg'}
               width={width}
               height={height}
             />
+          </Fragment>
         )}
       </AutoSizer>
     </div>
   );
 }
+
+
+/*
+function swapData () {
+
+import Button from './components/button';
+<Button onClick= {() => swapData()} >change </Button>
+
+
+////////////
+
+  const { data } = useSwr("wefi_Data", async () => {
+  const response = await fetch(
+    "https://gist.githubusercontent.com/leighhalliday/a994915d8050e90d413515e97babd3b3/raw/a3eaaadcc784168e3845a98931780bd60afb362f/covid19.json"
+
+    //  "https://gist.githubusercontent.com/---------/------/data.json"
+    );
+    const data = await response.json();
+    return data;
+  });
+}
+
+*/
