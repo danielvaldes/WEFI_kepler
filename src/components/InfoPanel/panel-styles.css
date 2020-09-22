@@ -79,11 +79,24 @@
 
 .stats
 {
- color: #ffffff;
- font-size: .9em;
+  color: #ffffff;
+	text-align: left;
+	font-size: .8em;
+}
+.stats thead
+{
+	text-align: left;
+ 	color: #ffffff;
+	max-width: 256px;
+	font-size: 1.25em;
+}
+.stats tbody
+{
+	text-align: left;
+ 	color: #ffffff;
+	font-style: italic;
 }
 
 .flag {
-
 		width: 50%;
 }
