@@ -16,6 +16,8 @@ import wefiData from './data/data.csv';
 import myMapConfig from './MapConfig';
 
 
+
+
 function Map() {
   //dispatch is used to get data from git repos
 const dispatch = useDispatch();
@@ -38,7 +40,7 @@ useEffect(() => {
         config: myMapConfig
       })
     );
-}, [dispatch, data]);
+}, []);
   return (
     <div style={{position: "absolute", width: "100%", height: "100%"}}>
       <AutoSizer>

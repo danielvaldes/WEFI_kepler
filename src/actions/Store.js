@@ -1,8 +1,6 @@
 import keplerGlReducer from "kepler.gl/reducers";
 import { createStore, combineReducers, applyMiddleware } from "redux";
 import { taskMiddleware } from "react-palm/tasks";
-import {LOCALE_CODES} from "kepler.gl/localization";
-
 //////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////
 //Required for Kepler.gl
