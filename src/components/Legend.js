@@ -1,18 +1,17 @@
 import React from 'react';
-import label from './images/RankLabel.png';
+import legend from './images/RankLegend.png';
 import './InfoPanel/panel-styles.css';
 
-function Label() {
+function Legend() {
   return (
-    <div className="label">
+    <div className="legend">
 	   <img
-      src={label}
-
-      width={'50%'}
+      src={legend}
+      width={'60%'}
       mode='fit'
       alt="Label missing"
        />
        </div>
   );
 }
-export default Label;
+export default Legend;

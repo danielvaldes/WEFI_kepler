@@ -9,9 +9,9 @@
 	max-width: 256px;
 	min-width: 128px;
 
-
+	background: rgba(125,0,0,0.2);
 	border: 2px solid #161D35;
-	background: #1B2446;
+
 
 	font-family: 'Open Sans';
 
@@ -19,53 +19,64 @@
 	display: flex;
 	flex-direction: column;
 }
-.label {
+.legend {
 	z-index: 100;
 	max-width: 1024px;
 	position: absolute;
-	top: 94%;
+	top: 93%;
 	left: 10px;
-	opacity:.8;
 }
 
 .panel p {
 	text-align: center;
 	color: #D4A968;
+
 }
 
-.panelHeader {
+.panel header {
 	color: #ffffff;
 	text-align: center;
+	background: #1B2446;
 	font-size: 1em;
 }
-.panelHeader p {
+
+.panel header p {
 	text-align: center;
 	color: #D4A968;
 	padding: 2%;
-	font-size: 18px;
+	font-size: 1em;
 }
-.panelFooter  {
+
+
+.panel footer  {
+	text-align: left;
+	background: #1B2446;
 	padding: 2%;
+
 }
-.panelFooter main {
-	color: #ffffff;
-	text-decoration: underline;
-}
-.panelFooter  p {
+
+.panel footer p {
 	text-align: left;
 	color: #D4A968;
 	font-size: 12px;
 }
+
+.panel .buttons {
+	padding-top: 10px;
+}
+
 .panel button {
-	padding: 10px 10px;
+	padding: 5px 10px;
 	background: #252525;
 	border: 1px solid #ffffff;
 	color: #D4A968;
 }
+
 .panel button:hover {
 	background: #00939C;
 	color: #252525;
 }
+
 .stats
 {
   color: #ffffff;
@@ -85,6 +96,7 @@
  	color: #ffffff;
 	font-style: italic;
 }
+
 .flag {
 		width: 50%;
 }

@@ -10,7 +10,6 @@ const myConfig =
     //Some of the key updaters are updateVisDataUpdater, layerConfigChangeUpdater, setFilterUpdater, interactionConfigChangeUpdater.
     "visState":
     {
-      "filters":[],
       "layers":
       [
         {
@@ -29,22 +28,12 @@ const myConfig =
             "visConfig":
             {
               "opacity":.5,
-              "strokeOpacity":0.4,
-              "thickness":0.25,
-              "strokeColor":[255,254,213],
               "colorRange":
               {
-                "name":"Global Warming",
+                "name":"RankColorPalette",
                 "type":"sequential",
-                "category":"Uber",
+                "category":"WEFI",
                 "colors":["#1A751A","#33AD33","#33C073","#75B558","#FF7C80","#FF5050","#CD171A","#A50021"]
-              },
-              "strokeColorRange":
-              {
-                "name":"Global Warming",
-                "type":"sequential",
-                "category":"Uber",
-                "colors":["#5A1846","#900C3F","#C70039","#E3611C","#F1920E","#FFC300"]
               },
               "radius":10,
               "sizeRange":[0,10],
@@ -53,10 +42,7 @@ const myConfig =
               "elevationScale":5,
               "stroked":false,
               "filled":true,
-              "enable3d":false,
-              "wireframe":false
             },
-            "hidden":false,
             "textLabel":
             [
               {
@@ -78,14 +64,6 @@ const myConfig =
               "type":"integer"
             },
             "colorScale":"quantile",
-            "sizeField":null,
-            "sizeScale":"linear",
-            "strokeColorField":null,
-            "strokeColorScale":"quantile",
-            "heightField":null,
-            "heightScale":"linear",
-            "radiusField":null,
-            "radiusScale":"linear"
           }
         }
       ],
@@ -115,30 +93,10 @@ const myConfig =
               }
             ]
           },
-          "compareMode":false,
+          "compareMode":true,
           "compareType":"absolute",
           "enabled":true
-        },
-        "brush":
-        {
-          "size":0.5,
-          "enabled":false
-        },
-        "geocoder":
-        {
-          "enabled":false
-        },
-        "coordinate":
-        {
-          "enabled":false
         }
-      },
-      "layerBlending":"normal",
-      "splitMaps":[],
-      "animationConfig":
-      {
-       "currentTime":null,
-       "speed":1
       }
     },
     //mapState -
@@ -146,31 +104,19 @@ const myConfig =
     // Key updates are updateMapUpdater, toggleSplitMapUpdater and togglePerspectiveUpdater.
     "mapState":
     {
-      "bearing":0,
-      "dragRotate":false,
-      "latitude":-22.848217,
-      "longitude":28.384966,
-      "pitch":0,
-      "zoom":16,
-      "isSplit":false
+
     },
     //mapStyle  -
     // Managers base map style, including setting base map style, toggling base map layers and adding custom base map style.
     "mapStyle":
     {
       "styleType":"wefi_customMap",
-      "topLayerGroups":{},
       "visibleLayerGroups":
       {
         "label":true,
-        "road":false,
-        "border":false,
-        "building":false,
         "water":true,
         "land":true,
-        "3d building":false
       },
-      "threeDBuildingColor":[9.665468314072013,17.18305478057247,31.1442867897876],
       "mapStyles":
       {
         "wefi_customMap":
@@ -189,8 +135,7 @@ const myConfig =
 		//Note, ui state reducer is the only reducer that’s not saved in kepler.gl schema.
 		"uiState":
 		{
-
-		}
+    }
   }
 };
 export default myConfig;
