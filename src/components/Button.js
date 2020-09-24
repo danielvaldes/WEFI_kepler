@@ -3,8 +3,8 @@ import React from 'react';
 const buttonStyle = {
   position: 'absolute',
   zIndex: 100,
-  bottom: 0,
-  right: 'calc(98% - 120px)',
+  bottom: 60,
+  right: 'calc(95% - 120px)',
   width: '120px',
   height: '40px',
   backgroundColor: '#1f7cf4',

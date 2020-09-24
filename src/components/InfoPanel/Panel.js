@@ -3,9 +3,9 @@ import './panel-styles.css';
 
 
 
-import Header from './header';
-import Footer from './footer';
-import Stats from './stats';
+import PanelHeader from './PanelHeader';
+import PanelFooter from './PanelFooter';
+import Stats from './Stats';
 
 //prompt does not behave properly
 function swapData () {
@@ -26,18 +26,16 @@ const panel = () => {
 
 		return (
 			<div className="panel">
-				<Header/>
-						<button onClick= {() => swapData()}>
-							click
-						</button>
-
-						<p>Here I can probably include images and or labels</p>
-            <Stats/>
-
-						<button onClick= {() => swapData()}>
-							click
-						</button>
-				<Footer/>
+				<PanelHeader/>
+				<button onClick= {() => swapData()}>
+					click
+				</button>
+				<p>Here I can probably include images and or labels</p>
+        <Stats/>
+				<button onClick= {() => swapData()}>
+					click
+				</button>
+				<PanelFooter/>
 			</div>);
 };
 

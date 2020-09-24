@@ -9,9 +9,9 @@
 	max-width: 256px;
 	min-width: 128px;
 
-	background: rgba(125,0,0,0.2);
-	border: 2px solid #161D35;
 
+	border: 2px solid #161D35;
+	background: #1B2446;
 
 	font-family: 'Open Sans';
 
@@ -23,60 +23,49 @@
 	z-index: 100;
 	max-width: 1024px;
 	position: absolute;
-	top: 88%;
+	top: 94%;
 	left: 10px;
+	opacity:.8;
 }
 
 .panel p {
 	text-align: center;
 	color: #D4A968;
-
 }
 
-.panel header {
+.panelHeader {
 	color: #ffffff;
 	text-align: center;
-	background: #1B2446;
 	font-size: 1em;
 }
-
-.panel header p {
+.panelHeader p {
 	text-align: center;
 	color: #D4A968;
 	padding: 2%;
-	font-size: 1em;
+	font-size: 18px;
 }
-
-
-.panel footer  {
-	text-align: left;
-	background: #1B2446;
+.panelFooter  {
 	padding: 2%;
-
 }
-
-.panel footer p {
+.panelFooter main {
+	color: #ffffff;
+	text-decoration: underline;
+}
+.panelFooter  p {
 	text-align: left;
 	color: #D4A968;
 	font-size: 12px;
 }
-
-.panel .buttons {
-	padding-top: 10px;
-}
-
 .panel button {
-	padding: 5px 10px;
+	padding: 10px 10px;
 	background: #252525;
 	border: 1px solid #ffffff;
 	color: #D4A968;
 }
-
 .panel button:hover {
 	background: #00939C;
 	color: #252525;
 }
-
 .stats
 {
   color: #ffffff;
@@ -96,7 +85,6 @@
  	color: #ffffff;
 	font-style: italic;
 }
-
 .flag {
 		width: 50%;
 }

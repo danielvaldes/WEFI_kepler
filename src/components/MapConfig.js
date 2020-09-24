@@ -19,7 +19,7 @@ const myConfig =
           "config":
           {
             "dataId":"wefi_map",
-            "label":"WEFI_Data",
+            "label":"WEFI 2019",
             "color":[255,178,102],
             "columns":
             {
@@ -28,7 +28,7 @@ const myConfig =
             "isVisible":true,
             "visConfig":
             {
-              "opacity":0.4,
+              "opacity":.5,
               "strokeOpacity":0.4,
               "thickness":0.25,
               "strokeColor":[255,254,213],
@@ -37,7 +37,7 @@ const myConfig =
                 "name":"Global Warming",
                 "type":"sequential",
                 "category":"Uber",
-                "colors":["#003300","#006600","#008000","#009900","#CC6C6A","#953735","#632523","#420021"]
+                "colors":["#1A751A","#33AD33","#33C073","#75B558","#FF7C80","#FF5050","#CD171A","#A50021"]
               },
               "strokeColorRange":
               {
@@ -51,7 +51,7 @@ const myConfig =
               "radiusRange":[0,50],
               "heightRange":[0,500],
               "elevationScale":5,
-              "stroked":true,
+              "stroked":false,
               "filled":true,
               "enable3d":false,
               "wireframe":false
@@ -62,7 +62,8 @@ const myConfig =
               {
                 "field":null,
                 "color":[255,255,255],
-                "size":18,
+                "size":32,
+                "z-index": 100,
                 "offset":[0,0],
                 "anchor":"start",
                 "alignment":"center"
@@ -97,19 +98,15 @@ const myConfig =
             "wefi_map":
             [
               {
-                "name":"name",
-                "format":null
-              },
-              {
                 "name":"Country",
                 "format":null
               },
               {
-                "name":"Index",
+                "name":"Rank",
                 "format":null
               },
               {
-                "name":"Rank",
+                "name":"Index",
                 "format":null
               },
               {
@@ -154,7 +151,7 @@ const myConfig =
       "latitude":-22.848217,
       "longitude":28.384966,
       "pitch":0,
-      "zoom":1,
+      "zoom":16,
       "isSplit":false
     },
     //mapStyle  -
@@ -165,7 +162,7 @@ const myConfig =
       "topLayerGroups":{},
       "visibleLayerGroups":
       {
-        "label":false,
+        "label":true,
         "road":false,
         "border":false,
         "building":false,
@@ -183,7 +180,7 @@ const myConfig =
           "icon": "BASE64IMAGE",
           "id": "wefi_customMap",
           "label": "WEFI_kepler",
-          "url": "mapbox://styles/monosaicol/ckeudvs250mf51ao7u2wp5gji"
+          "url": "mapbox://styles/monosaicol/ckfgayc9221jd19pejavyat15"
         }
       }
     },

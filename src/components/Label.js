@@ -1,5 +1,5 @@
 import React from 'react';
-import label from './images/rankLabel.png';
+import label from './images/RankLabel.png';
 import './InfoPanel/panel-styles.css';
 
 function Label() {
@@ -7,6 +7,7 @@ function Label() {
     <div className="label">
 	   <img
       src={label}
+
       width={'50%'}
       mode='fit'
       alt="Label missing"
