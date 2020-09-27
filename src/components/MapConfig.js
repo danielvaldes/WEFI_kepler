@@ -35,7 +35,7 @@ const myConfig =
                 "category":"WEFI",
                 "colors":["#1A751A","#33AD33","#33C073","#75B558","#FF7C80","#FF5050","#CD171A","#A50021"]
               },
-              "radius":10,
+              "radius":20,
               "sizeRange":[0,10],
               "radiusRange":[0,50],
               "heightRange":[0,500],
