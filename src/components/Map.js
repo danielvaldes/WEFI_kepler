@@ -3,7 +3,7 @@ import React from "react";
 import AutoSizer from "react-virtualized/dist/commonjs/AutoSizer";
 
 import {
-//  MapPopoverFactory,
+  MapPopoverFactory,
   MapControlFactory,
   injectComponents
 } from 'kepler.gl/components';
@@ -11,14 +11,14 @@ import {
 
 //By implementing the NewMapPopover
 //We will be removing the ToolTip design
-/*
+
 function NewMapPopover () {
   return (
     <div style={{position: "absolute", zIndex: 100, top: '10px', left: '10px' }}>
-      <p>empty</p>
+      <p></p>
     </div>
   );
-}*/
+}
 
 //Gets rid of the side buttons
 //Currently empty
@@ -31,15 +31,15 @@ function NewMapControl () {
 }
 
 //Custom ToolTip
-//const CustomMapPopover = () => (NewMapPopover());
-//const myCustomMapPopoverFactory = () => CustomMapPopover;
+const CustomMapPopover = () => (NewMapPopover());
+const myCustomMapPopoverFactory = () => CustomMapPopover;
 
 const CustomMapControl = () => (NewMapControl());
 const myCustomMapControlFactory = () => CustomMapControl;
 
 //Injecting (replacing DefaultComponents for Custom ones)
 const KeplerGl = injectComponents([
-//  [MapPopoverFactory, myCustomMapPopoverFactory],
+  [MapPopoverFactory, myCustomMapPopoverFactory],
   [MapControlFactory, myCustomMapControlFactory]
 ]);
 

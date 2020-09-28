@@ -2,7 +2,6 @@ import React from "react";
 
 
 
-
 //Dispatch Actions
 import Store from '../store';
 import { togglePerspective} from 'kepler.gl/actions';
