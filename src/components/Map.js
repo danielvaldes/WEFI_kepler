@@ -1,7 +1,19 @@
-import React from "react";
+import React, {useEffect} from "react";
 
 import AutoSizer from "react-virtualized/dist/commonjs/AutoSizer";
 
+
+
+//Needed for initMapSetUp()
+import Store from '../store';
+import {addDataToMap} from 'kepler.gl/actions';
+import WEFI_2019_AGX from './data/WEFI_2019_AGX.csv';
+import Processors from 'kepler.gl/processors';
+import myMapConfig from './MapConfig';
+
+
+
+//Overwriting Default Components (They are called 'Factory')
 import {
   MapPopoverFactory,
   MapControlFactory,
@@ -9,10 +21,14 @@ import {
 } from 'kepler.gl/components';
 
 
-//By implementing the NewMapPopover
-//We will be removing the ToolTip design
+const CustomMapPopoverFactory = () => (NewMapPopoverFactory());
+const myCustomMapPopoverFactory = () => CustomMapPopoverFactory;
+const CustomMapControlFactory = () => (NewMapControlFactory());
+const myCustomMapControlFactory = () => CustomMapControlFactory;
 
-function NewMapPopover () {
+//By implementing the NewMapPopover,
+//we will be removing the ToolTip component
+function NewMapPopoverFactory () {
   return (
     <div style={{position: "absolute", zIndex: 100, top: '10px', left: '10px' }}>
       <p></p>
@@ -20,9 +36,8 @@ function NewMapPopover () {
   );
 }
 
-//Gets rid of the side buttons
-//Currently empty
-function NewMapControl () {
+//Gets rid of the side MapContorl buttons
+function NewMapControlFactory () {
   return (
     <div style={{position: "absolute", zIndex: 100, top: '20px', left: '10px' }}>
       <p></p>
@@ -30,12 +45,32 @@ function NewMapControl () {
   );
 }
 
-//Custom ToolTip
-const CustomMapPopover = () => (NewMapPopover());
-const myCustomMapPopoverFactory = () => CustomMapPopover;
+//This runs when Map gets Mounted for the first timeout
+//It will do our initial map setUp
+function initMapSetUp()
+{
+  console.log("00_This will run only once")
+  const data = Processors.processCsvData(WEFI_2019_AGX);
 
-const CustomMapControl = () => (NewMapControl());
-const myCustomMapControlFactory = () => CustomMapControl;
+  Store.dispatch(
+    addDataToMap({
+      datasets: {
+        info: {
+          label: "WEFI_Data",
+          id: "wefi_map"
+        },
+        data
+      },
+      options: {
+        centerMap: false,
+        readOnly: true,
+
+      },
+      config: myMapConfig
+    })
+  );
+}
+
 
 //Injecting (replacing DefaultComponents for Custom ones)
 const KeplerGl = injectComponents([
@@ -44,6 +79,9 @@ const KeplerGl = injectComponents([
 ]);
 
 function Map() {
+  useEffect(() => {
+   initMapSetUp()
+ },[]);
   return (
     <div style={{position: "absolute", width: "100%", height: "100%"}}>
       <AutoSizer>
