@@ -1,6 +1,6 @@
 import React from 'react';
 import legend from './images/RankLegend.png';
-import './InfoPanel/panel-styles.css';
+import './styles/styles.css';
 
 function Legend() {
   return (

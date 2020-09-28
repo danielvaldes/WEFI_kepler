@@ -48,7 +48,7 @@ const myConfig =
               {
                 "field":null,
                 "color":[255,255,255],
-                "size":32,
+                "size":50,
                 "z-index": 100,
                 "offset":[0,0],
                 "anchor":"start",
@@ -60,7 +60,7 @@ const myConfig =
           {
             "colorField":
             {
-              "name":"Rank",
+              "name":"RANK",
               "type":"integer"
             },
             "colorScale":"quantile",
@@ -104,6 +104,9 @@ const myConfig =
     // Key updates are updateMapUpdater, toggleSplitMapUpdater and togglePerspectiveUpdater.
     "mapState":
     {
+      "latitude": 35,
+      "longitude": -95,
+      "zoom": 3
 
     },
     //mapStyle  -
@@ -135,6 +138,7 @@ const myConfig =
 		//Note, ui state reducer is the only reducer that’s not saved in kepler.gl schema.
 		"uiState":
 		{
+
     }
   }
 };

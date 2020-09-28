@@ -2,10 +2,10 @@
 
 
 //Actions
-export const BUY_POKEMON = 'BUY_POKEMON';
-export const buy_pokemon_action = (cant) => {
+export const ADD_COUNTER = 'ADD_COUNTER';
+export const add_counter_action = (cant) => {
   return {
-    type: BUY_POKEMON,
+    type: ADD_COUNTER,
     payload: cant
   }
 }
@@ -20,10 +20,9 @@ export const set_data_action = (cant) => {
 
 
 
-
-//Our constant Memory Variable
+//Our constant APP Memory Variables
 const app_default_state = {
-  pokemon: 10,
+  counter: 10,
   nombre: 'Jose',
   data: []
 };
@@ -31,10 +30,10 @@ const app_default_state = {
 
 const app_default_reducer = function ( state = app_default_state, action) {
 	switch (action.type) {
-    case BUY_POKEMON:{
+    case ADD_COUNTER:{
       return {
         ...state,
-        pokemon: state.pokemon - action.payload
+        counter: state.pokemon - action.payload
       }
     }
     case SET_DATA: {
@@ -50,4 +49,3 @@ const app_default_reducer = function ( state = app_default_state, action) {
 
 
 export default app_default_reducer;
-///
