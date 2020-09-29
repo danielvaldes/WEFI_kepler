@@ -6,7 +6,7 @@ import AutoSizer from "react-virtualized/dist/commonjs/AutoSizer";
 import Store from '../store';
 import {addDataToMap} from 'kepler.gl/actions';
 import {set_legend_action} from '../store/Reducers'
-import WEFI_2019_AGX from './data/WEFI_2019_AGX.csv';
+import WEFI_2019_AGX from './data/WEFI_2019_AGX.csv.js';
 import Processors from 'kepler.gl/processors';
 import myMapConfig from './MapConfig';
 
@@ -28,7 +28,6 @@ const myCustomMapControlFactory = () => CustomMapControlFactory;
 //we will be removing the ToolTip component
 //And build our custom
 function NewMapPopoverFactory () {
-  //console.log(Store.getState().keplerGl.WEFI_2019.visState.clicked)
   return (
     <div style={{position: "absolute", zIndex: 100, top: '10px', left: '10px' }}>
       <h2> WEFI 2019 </h2>
@@ -90,6 +89,7 @@ function handleClick()
   const content = Store.getState().keplerGl.WEFI_2019.visState.clicked
   if(content != null)
   {
+    console.log(content.object)
     Store.dispatch(set_legend_action(content))
   }
   else {
