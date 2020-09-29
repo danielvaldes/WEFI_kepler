@@ -4,8 +4,8 @@ import AutoSizer from "react-virtualized/dist/commonjs/AutoSizer";
 
 //Needed for initMapSetUp()
 import Store from '../store';
-import {addDataToMap, dispatch} from 'kepler.gl/actions';
-import {remove_counter_action, set_legend_action} from '../store/Reducers'
+import {addDataToMap} from 'kepler.gl/actions';
+import {set_legend_action} from '../store/Reducers'
 import WEFI_2019_AGX from './data/WEFI_2019_AGX.csv';
 import Processors from 'kepler.gl/processors';
 import myMapConfig from './MapConfig';
