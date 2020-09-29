@@ -1,20 +1,14 @@
 
 
+export const SET_LEGEND = 'SET_LEGEND';
+
+
 
 //Actions
-export const ADD_COUNTER = 'ADD_COUNTER';
-export const add_counter_action = (cant) => {
+export const set_legend_action = (state) => {
   return {
-    type: ADD_COUNTER,
-    payload: cant
-  }
-}
-
-export const SET_DATA = 'ADD_DATA';
-export const set_data_action = (cant) => {
-  return {
-    type: SET_DATA,
-    payload: cant
+    type: SET_LEGEND,
+    payload: state
   }
 }
 
@@ -22,27 +16,24 @@ export const set_data_action = (cant) => {
 
 //Our constant APP Memory Variables
 const app_default_state = {
-  counter: 10,
-  nombre: 'Jose',
-  data: []
+  random: 0,
+  name: '',
+  country: '',
+  rank: 0
 };
 
 
 const app_default_reducer = function ( state = app_default_state, action) {
 	switch (action.type) {
-    case ADD_COUNTER:{
+    case SET_LEGEND:{
       return {
         ...state,
-        counter: state.pokemon - action.payload
-      }
+          name: action.payload.object.properties.name,
+          country: action.payload.object.id,
+          rank: 0
+          }
     }
-    case SET_DATA: {
-      return {
-        ...state,
-        data: action.payload
-      }
-    }
-		default:
+    default:
 			return state;
 	}
 };

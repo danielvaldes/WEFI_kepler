@@ -1,11 +1,11 @@
 import keplerGlReducer from "kepler.gl/reducers";
 import { createStore, combineReducers, applyMiddleware } from "redux";
 import { taskMiddleware } from "react-palm/tasks";
-//////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////
-//Required for Kepler.gl
 
+//List of App Actions ('reducers')
 import app_default_reducer from './Reducers'
+
+
 
 
 const customizeKeplerGLReducer = keplerGlReducer.initialState({
@@ -15,7 +15,7 @@ const customizeKeplerGLReducer = keplerGlReducer.initialState({
   }
 });
 
-//Here we can set up initial state of keplers map and configs
+//We want keplers Reducers and App Reducers
 const reducer = combineReducers({
   keplerGl: customizeKeplerGLReducer,
   app: app_default_reducer
