@@ -2,26 +2,34 @@ import React from "react";
 import './styles/styles.css';
 
 //Image
-import legend from './images/RankLegend.png';
+import legend from './images/legendGradient.png';
 
 function Footer() {
   return (
     <div className="footer">
       <div className="waterMark">
-        <p> © Foundation for the Advancement of Liberty:</p>
+        <p>   ©<a href="http://www.fundalib.org"> Foundation for the Advancement of Liberty:</a> </p>
         <p> WEFI 2020</p>
-        <p>Dataviz by Advent GX</p>
+        <p>Dataviz by
+          <a href="https://iu.adventgx.com"> Advent GX</a>
+        </p>
       </div>
       <br></br>
       <div className="legend">
        <img
         src={legend}
-        width={'65%'}
+        width={'100%'}
         mode='fit'
         alt="Label missing"
          />
       </div>
+      <div className="legendInfo">
+       <p style={{textAlign: 'left'}}>Remarkably low electoral freedom</p>
+       <p style={{textAlign: 'right'}}>Outstanding electoral freedom</p>
+      </div>
+
     </div>
+
   );
 }
 

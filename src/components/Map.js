@@ -5,11 +5,11 @@ import AutoSizer from "react-virtualized/dist/commonjs/AutoSizer";
 //Needed for initMapSetUp()
 import Store from '../store';
 import {addDataToMap} from 'kepler.gl/actions';
-import {set_legend_action} from '../store/Reducers'
+import {set_legend_action, toggle_tooltip_action} from '../store/Reducers'
 import WEFI_2019_AGX from './data/WEFI_2019_AGX.csv.js';
 import Processors from 'kepler.gl/processors';
 import myMapConfig from './MapConfig';
-
+import myToolTip from './ToolTip';
 
 //Overwriting Default Components (They are called 'Factory')
 import {
@@ -28,16 +28,10 @@ const myCustomMapControlFactory = () => CustomMapControlFactory;
 //we will be removing the ToolTip component
 //And build our custom
 function NewMapPopoverFactory () {
-  return (
-    <div className="panel">
-      <h2> WEFI  </h2>
-      <p>Id:    <p2>{Store.getState().app.id}</p2></p>
-      <p>Country:   <p2>{Store.getState().app.country}</p2></p>
-      <p>Index: <p2>{Store.getState().app.index}</p2></p>
-      <p>Rank:   <p2>{Store.getState().app.rank}</p2></p>
-      <p>Classification: <p2>{Store.getState().app.classification}</p2></p>
-    </div>
-  );
+
+    return (
+      myToolTip(Store.getState().app.show)
+    );
 }
 
 //Gets rid of the side MapContorl buttons
@@ -90,11 +84,12 @@ function handleClick()
   const content = Store.getState().keplerGl.WEFI_2019.visState.clicked
   if(content != null)
   {
-    //console.log(content.object.id)
+    Store.dispatch(toggle_tooltip_action(true))
     Store.dispatch(set_legend_action(content))
   }
   else {
-    console.log("content is Null")
+    //if clicked on something else and not a country -- disable ToolTip
+    Store.dispatch(toggle_tooltip_action(false)) 
   }
 }
 
