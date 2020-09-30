@@ -30,11 +30,12 @@ const myCustomMapControlFactory = () => CustomMapControlFactory;
 function NewMapPopoverFactory () {
   return (
     <div className="panel">
-      <h2> WEFI 2019 </h2>
-      <p>Name:   {Store.getState().app.name}</p>
-      <p>Id:     {Store.getState().app.country}</p>
-      <p>Rank:   {Store.getState().app.rank}</p>
-      <p>Random: {Store.getState().app.counter}</p>
+      <h2> WEFI  </h2>
+      <p>Id:    <p2>{Store.getState().app.id}</p2></p>
+      <p>Country:   <p2>{Store.getState().app.country}</p2></p>
+      <p>Index: <p2>{Store.getState().app.index}</p2></p>
+      <p>Rank:   <p2>{Store.getState().app.rank}</p2></p>
+      <p>Classification: <p2>{Store.getState().app.classification}</p2></p>
     </div>
   );
 }
@@ -89,7 +90,7 @@ function handleClick()
   const content = Store.getState().keplerGl.WEFI_2019.visState.clicked
   if(content != null)
   {
-    console.log(content.object)
+    //console.log(content.object.id)
     Store.dispatch(set_legend_action(content))
   }
   else {

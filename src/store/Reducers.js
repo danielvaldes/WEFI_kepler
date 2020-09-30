@@ -16,10 +16,11 @@ export const set_legend_action = (state) => {
 
 //Our constant APP Memory Variables
 const app_default_state = {
-  random: 0,
-  name: '',
   country: '',
-  rank: 0
+  id: '',
+  rank: '',
+  classification: '',
+  index: ''
 };
 
 
@@ -28,9 +29,11 @@ const app_default_reducer = function ( state = app_default_state, action) {
     case SET_LEGEND:{
       return {
         ...state,
-          name: action.payload.object.properties.name,
-          country: action.payload.object.id,
-          rank: 0
+          country: action.payload.object.data.NAME,
+          id: action.payload.object.id,
+          rank: action.payload.object.data.RANK,
+          classification: action.payload.object.data.CLASSIFICATION,
+          index: action.payload.object.data.INDEX
           }
     }
     default:

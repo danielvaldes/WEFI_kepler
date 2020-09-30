@@ -1,5 +1,5 @@
 .panel {
-	z-index: -1;
+	z-index: 100;
 
 	position: absolute;
 	top: 10px;
@@ -9,17 +9,26 @@
 	background: rgba(125,125,125,0.9);
 	border: 2px solid #161D35;
 	font-family: 'Open Sans';
-	line-height: 0;
-	display: flex;
-	flex-direction: column;
-}
-.footer{
-	display: flex;
 
+	line-height: 0.5;
+}
+.panel p
+{
+	font-size: 14px;
+}
+.panel p2
+{
+	font-size: 16px;
+  text-decoration: underline;
+	color:white;
+}
+.footer
+{
+	display: flex;
 	position: absolute;
 	height: 100%;
 	flex-direction:column-reverse;
-background: rgba(125,125,125,0.9);
+
 	left: 10px;
 	top: -2px;
 
