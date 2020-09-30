@@ -29,7 +29,7 @@ const myCustomMapControlFactory = () => CustomMapControlFactory;
 //And build our custom
 function NewMapPopoverFactory () {
   return (
-    <div style={{position: "absolute", zIndex: 100, top: '10px', left: '10px' }}>
+    <div className="panel">
       <h2> WEFI 2019 </h2>
       <p>Name:   {Store.getState().app.name}</p>
       <p>Id:     {Store.getState().app.country}</p>
