@@ -12,7 +12,9 @@ function ToolTip(toggle) {
         <main>Country:   <p>{Store.getState().app.country}</p></main>
         <main>Index: <p>{Store.getState().app.index}</p></main>
         <main>Rank:   <p>{Store.getState().app.rank}</p></main>
-        <main>Classification: <p>{Store.getState().app.classification}</p></main>
+        <br/>
+        <p>{Store.getState().app.classification}</p>
+
       </div>
     );
   }

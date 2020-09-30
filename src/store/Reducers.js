@@ -21,12 +21,12 @@ export const toggle_tooltip_action = (state) => {
 
 //Our constant APP Memory Variables
 const app_default_state = {
-  country: '',
-  id: '',
-  rank: '',
-  classification: '',
-  index: '',
-  show: false
+  country: 'Spain',
+  id: 'ESP',
+  rank: '37',
+  classification: 'High electoral freedom',
+  index: '74.6',
+  show: true
 };
 
 

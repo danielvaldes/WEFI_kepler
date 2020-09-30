@@ -89,7 +89,7 @@ function handleClick()
   }
   else {
     //if clicked on something else and not a country -- disable ToolTip
-    Store.dispatch(toggle_tooltip_action(false)) 
+    Store.dispatch(toggle_tooltip_action(false))
   }
 }
 

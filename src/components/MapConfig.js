@@ -31,9 +31,11 @@ const myConfig =
               "colorRange":
               {
                 "name":"RankColorPalette",
-                "type":"sequential",
+                "type":"custom",
                 "category":"WEFI",
-                "colors":["#1A751A","#33AD33","#33C073","#75B558","#FF7C80","#FF5050","#CD171A","#A50021"]
+                //the color order got based on alphabetization
+                //Order:  Acceptable, High Fre, Insufi, Low El, Outstanding, Remarkably, very hight, very low
+                "colors":["#75B558","#33C073","#FF5050","#FF7C80","#1A751A","#A50021","#A50021","#33AD33","#CD171A"]
               },
               "radius":20,
               "sizeRange":[0,10],
@@ -49,7 +51,7 @@ const myConfig =
                 "field":null,
                 "color":[255,255,255],
                 "size":50,
-                "z-index": 100,
+                "z-index": 1,
                 "offset":[0,0],
                 "anchor":"start",
                 "alignment":"center"
@@ -58,12 +60,21 @@ const myConfig =
           },
           "visualChannels":
           {
+
             "colorField":
             {
-              "name":"RANK",
-              "type":"integer"
-            },
-            "colorScale":"quantile",
+              "name":"CLASSIFICATION",
+              "type":"string"
+            },"colorScale":"ordinal",
+            "sizeField":null,
+            "sizeScale":"linear",
+            "strokeColorField":null,
+            "strokeColorScale":"quantile",
+            "heightField":null,
+            "heightScale":"linear",
+            "radiusField":null,
+            "radiusScale":"linear"
+
           }
         }
       ],
