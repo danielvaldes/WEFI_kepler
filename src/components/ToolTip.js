@@ -7,7 +7,7 @@ function ToolTip(toggle) {
   {
     return (
       <div className="panel">
-        <h2> WEFI 2019 </h2>
+        <h2> WEFI 2020 </h2>
         <main>Id:    <p>{Store.getState().app.id}</p></main>
         <main>Country:   <p>{Store.getState().app.country}</p></main>
         <main>Index: <p>{Store.getState().app.index}</p></main>

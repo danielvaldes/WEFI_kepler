@@ -35,7 +35,7 @@ const app_default_reducer = function ( state = app_default_state, action) {
     case SET_LEGEND:{
       return {
         ...state,
-          country: action.payload.object.data.NAME,
+          country: action.payload.object.data.COUNTRY,
           id: action.payload.object.id,
           rank: action.payload.object.data.RANK,
           classification: action.payload.object.data.CLASSIFICATION,
