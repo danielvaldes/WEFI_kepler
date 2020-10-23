@@ -84,7 +84,7 @@ function handleClick()
   const content = Store.getState().keplerGl.WEFI_2019.visState.clicked
   if(content != null)
   {
-    console.log(Store.getState())
+  //  console.log(Store.getState())
     Store.dispatch(toggle_tooltip_action(true))
     Store.dispatch(set_legend_action(content))
   }

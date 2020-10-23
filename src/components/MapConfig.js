@@ -115,9 +115,9 @@ const myConfig =
     // Key updates are updateMapUpdater, toggleSplitMapUpdater and togglePerspectiveUpdater.
     "mapState":
     {
-      "latitude": 40.4637,
-      "longitude": -4,
-      "zoom": 4
+      "latitude": 15,
+      "longitude": 20,
+      "zoom": 1.65
 
     },
     //mapStyle  -
