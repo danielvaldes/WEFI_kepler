@@ -163,34 +163,25 @@ function Footer() {
         <p>Dataviz by
           <a href="https://iu.adventgx.com"> Advent GX</a>
         </p></div>
-      <div style = {{opacity: '1'}}className="legend">
-        <img
-         src={legend}
-         width= {'100%'}
-         height={0}
-         mode='fit'
-         alt="Label missing"
-          />
-      </div>
+
       <div style={{ }} className="legend">
 
-          <div  style={{background: '#AD3C5B'}} onClick={() => setFilters("Remarkably low electoral freedom")} className={"rectangle"}>
-          </div>
-          <div style={{background: '#CB4D56'}} onClick={() => setFilters("Very low electoral freedom")} className={"rectangle"}>
-          </div>
-          <div  style={{background: '#EF767D'}} onClick={() => setFilters("Low electoral freedom")} className={"rectangle"}>
-          </div>
-          <div  style={{background: '#EF96A0'}} onClick={() => setFilters("Insufficient electoral freedom")} className={"rectangle"}>
-          </div>
-          <div  style={{background: '#8AC083'}} onClick={() => setFilters("Acceptable electoral freedom")} className={"rectangle"}>
-          </div>
-          <div  style={{background: '#5AC897'}} onClick={() => setFilters("High electoral freedom")} className={"rectangle"}>
-          </div>
-          <div  style={{background: '#5ABA68'}} onClick={() => setFilters("Very high electoral freedom")} className={"rectangle"}>
-          </div>
-          <div  style={{background: '#1A751A'}} onClick={() => setFilters("Outstanding electoral freedom")} className={"rectangle"}>
-          </div>
-
+            <button  style={{background: '#AD3C5B',border: 'none'}} onClick={() => setFilters("Remarkably low electoral freedom")} className={"rectangle"}>
+            </button>
+            <button  style={{background: '#CB4D56', border: 'none'}} onClick={() => setFilters("Very low electoral freedom")} className={"rectangle"}>
+            </button>
+            <button  style={{background: '#EF767D', border: 'none'}} onClick={() => setFilters("Low electoral freedom")} className={"rectangle"}>
+            </button>
+            <button  style={{background: '#EF96A0', border: 'none'}} onClick={() => setFilters("Insufficient electoral freedom")} className={"rectangle"}>
+            </button>
+            <button  style={{background: '#8AC083', border: 'none'}} onClick={() => setFilters("Acceptable electoral freedom")} className={"rectangle"}>
+            </button>
+            <button  style={{background: '#5AC897', border: 'none'}} onClick={() => setFilters("High electoral freedom")} className={"rectangle"}>
+            </button>
+            <button  style={{background: '#5ABA68', border: 'none'}} onClick={() => setFilters("Very high electoral freedom")} className={"rectangle"}>
+            </button>
+            <button  style={{background: '#1A751A', border: 'none'}} onClick={() => setFilters("Outstanding electoral freedom")} className={"rectangle"}>
+            </button>
       </div>
       <div className="legendInfo">
        <p style={{textAlign: 'left'}}>Remarkably low electoral freedom</p>

@@ -22,8 +22,8 @@
 		display: inline-block;
 		width:calc(100%/8);
 		height:40px;
-		background: rgba(125,125,125,.5);
 }
+
 .panel h2 {
 	line-height: 1.5;
 }
@@ -43,6 +43,7 @@
 {
 	font-size: 14px;
 	line-height: 1.5;
+	color: 'white';
 }
 .panel p
 {

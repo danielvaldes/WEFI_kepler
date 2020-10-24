@@ -29,7 +29,7 @@ function ToolTip(toggle) {
           {info}
         </ReactTooltip>
         <h2> WEFI 2020 </h2>
-        <main>Rank: <div className={len} data-tip data-for="registerTip"></div>
+        <main data-tip data-for="registerTip">Rank: <div className={len}></div>
           <p>{Store.getState().app.rank} </p>
         </main>
         <main>Id:    <p>{Store.getState().app.id}</p></main>
