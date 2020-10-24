@@ -28,7 +28,6 @@ const myCustomMapControlFactory = () => CustomMapControlFactory;
 //we will be removing the ToolTip component
 //And build our custom
 function NewMapPopoverFactory () {
-
     return (
       myToolTip(Store.getState().app.show)
     );
@@ -76,11 +75,11 @@ const KeplerGl = injectComponents([
   [MapControlFactory, myCustomMapControlFactory]
 ]);
 
-
 //Will use 1 simple handle click
 //to update UI stats based on location clicked
 function handleClick()
 {
+  console.log("did clicked??")
   const content = Store.getState().keplerGl.WEFI_2019.visState.clicked
   if(content != null)
   {
