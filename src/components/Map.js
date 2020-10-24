@@ -6,7 +6,7 @@ import AutoSizer from "react-virtualized/dist/commonjs/AutoSizer";
 import Store from '../store';
 import {addDataToMap} from 'kepler.gl/actions';
 import {set_legend_action, toggle_tooltip_action} from '../store/Reducers'
-import WEFI_2019_AGX from './data/WEFI_2020_AGX.csv.js';
+import WEFI_2019_AGX from './data/WEFI.csv.js';
 import Processors from 'kepler.gl/processors';
 import myMapConfig from './MapConfig';
 import myToolTip from './ToolTip';
@@ -84,7 +84,7 @@ function handleClick()
   const content = Store.getState().keplerGl.WEFI_2019.visState.clicked
   if(content != null)
   {
-  //  console.log(Store.getState())
+    console.log(Store.getState())
     Store.dispatch(toggle_tooltip_action(true))
     Store.dispatch(set_legend_action(content))
   }

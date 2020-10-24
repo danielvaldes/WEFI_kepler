@@ -17,6 +17,7 @@ function GetState()
 function Toggle()
 {
   Store.dispatch(togglePerspective())
+  console.log("mono")
 }
 
 function randomFunct()
@@ -33,6 +34,9 @@ function Header() {
       <button onClick={GetState}>GetState</button>
       <button onClick={Toggle}>Toggle</button>
       <button onClick={randomFunct}>Add Data</button>
+      <div className="triangleUp" />
+      <div className="triangleDown" />
+      <div className="rectangle" />
     </header>
   );
 }

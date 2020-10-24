@@ -26,6 +26,7 @@ const app_default_state = {
   rank: '37',
   classification: 'High electoral freedom',
   index: '74.6',
+  rank2019: '50',
   show: true
 };
 
@@ -39,7 +40,8 @@ const app_default_reducer = function ( state = app_default_state, action) {
           id: action.payload.object.id,
           rank: action.payload.object.data.RANK,
           classification: action.payload.object.data.CLASSIFICATION,
-          index: action.payload.object.data.INDEX
+          index: action.payload.object.data.INDEX,
+          rank2019: action.payload.object.data.RANK_2019
           }
     }
     case TOGGLE_TOOLTIP: {

@@ -1,3 +1,26 @@
+.triangleDown {
+	display: inline-block;
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 15px 10px 0 10px;
+	border-color: red transparent transparent transparent;
+}
+.triangleUp {
+	margin-left: 10px;
+	margin-right: 10px;
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0px 10px 15px 10px;
+	border-color: transparent transparent lightgreen transparent;
+}
+.panel h2 {
+	line-height: 1.5;
+}
 .panel {
 	z-index: 100;
 
@@ -6,11 +29,9 @@
 	left: 10px;
 	padding: 10px;
 
-	background: rgba(125,125,125,0.375);
+	background: rgba(125,125,125,.6);
 	border: 1px solid #161D35;
 	font-family: 'Open Sans';
-
-	line-height: .5;
 }
 .panel main
 {
@@ -46,18 +67,26 @@
 
 .legendInfo p{
 	font-weight: bold;
-	max-width: 30%;
+	max-width: 40%;
 	display: inline;
-	line-height: .9;
+	line-height: 1.2;
 	margin:  0;
 }
 .legend {
 	z-index: 100;
 	max-width: 700px;
+	margin-bottom: -5px;
 }
 
 
-.waterMark {
+.waterMark_Desktop {
+	z-index: 100;
+	padding-top: 10px;
+	font-size: 12px;
+	line-height: 0.5;
+	font-style: oblique;
+}
+.waterMark_Mobile {
 	z-index: 100;
 	padding-top: 10px;
 	font-size: 8px;

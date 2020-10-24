@@ -5,9 +5,21 @@ import './styles/styles.css';
 import legend from './images/legendGradient.png';
 
 function Footer() {
+  let waterMark = '25%'
+  if(/Android|webOS|iPhone|iPad|iPod|Opera Mini/i.test(navigator.userAgent))
+  {
+    console.log("here on a mobile")
+    waterMark = "waterMark_Mobile"
+  }
+  else {
+    console.log("here on a Desktop")
+    waterMark = "waterMark_Desktop"
+  }
+
+
   return (
     <div className="footer">
-      <div className="waterMark">
+      <div className={waterMark}>
         <p>   ©<a href="http://www.fundalib.org"> Foundation for the Advancement of Liberty:</a> </p>
         <p> WEFI 2020</p>
         <p>Dataviz by
@@ -18,7 +30,7 @@ function Footer() {
       <div className="legend">
        <img
         src={legend}
-        width={'100%'}
+        width= {'100%'}
         mode='fit'
         alt="Label missing"
          />
