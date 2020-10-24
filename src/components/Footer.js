@@ -1,11 +1,10 @@
 import React from "react";
 import './styles/styles.css';
 
-//Image
-import legend from './images/legendGradient.png';
+
 
 import Store from '../store';
-import { togglePerspective} from 'kepler.gl/actions';
+
 import {addDataToMap} from 'kepler.gl/actions';
 import WEFI_2019_AGX from './data/WEFI.csv.js';
 import Processors from 'kepler.gl/processors';
@@ -28,7 +27,8 @@ function setFilters(x)
       {
         //console.log(x + " ---- already existed")
       }
-      else {
+      else
+      {
           nNames.push(name)
       }
     })

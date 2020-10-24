@@ -4,9 +4,7 @@ import Store from '../store';
 
 import ReactTooltip from "react-tooltip";
 
-function changeBackground(e) {
-   e.target.style.background = 'red';
- }
+
 function ToolTip(toggle) {
   if(toggle)
   {
