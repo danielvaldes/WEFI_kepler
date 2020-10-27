@@ -4,12 +4,9 @@ import './styles/styles.css';
 
 
 import Store from '../store';
-
 import {addDataToMap} from 'kepler.gl/actions';
 import WEFI_2019_AGX from './data/WEFI.csv.js';
 import Processors from 'kepler.gl/processors';
-
-
 
 let names =[]
 const data = Processors.processCsvData(WEFI_2019_AGX);
@@ -47,8 +44,6 @@ function setFilters(x)
 
 function UpdateMapFilters()
 {
-
-
   let currentConfig = {
     "version":"v1",
     "config":
@@ -146,11 +141,11 @@ function Footer() {
   let waterMark = '25%'
   if(/Android|webOS|iPhone|iPad|iPod|Opera Mini/i.test(navigator.userAgent))
   {
-    console.log("here on a mobile")
+  //  console.log("here on a mobile")
     waterMark = "waterMark_Mobile"
   }
   else {
-    console.log("here on a Desktop")
+  //  console.log("here on a Desktop")
     waterMark = "waterMark_Desktop"
   }
 

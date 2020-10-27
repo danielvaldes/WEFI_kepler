@@ -27,7 +27,7 @@ const app_default_state = {
   classification: 'High electoral freedom',
   index: '74.6',
   rank2019: '50',
-  show: true
+  show: false
 };
 
 

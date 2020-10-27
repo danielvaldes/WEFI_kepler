@@ -3,9 +3,12 @@ import './styles/styles.css';
 import Store from '../store';
 
 import ReactTooltip from "react-tooltip";
+import back from  './images/01_Background.png';
+import shade from  './images/01_Shade.png';
 
 
-function ToolTip(toggle) {
+
+function ToolhTip(toggle) {
   if(toggle)
   {
     let len = ""
@@ -18,33 +21,47 @@ function ToolTip(toggle) {
     else {
          len = "triangleDown";
     }
-
-
-
+    //console.log("01_I need log mobile vs desktop")
     return (
-      <div className="panel">
-        <ReactTooltip id="registerTip" place="top" effect="solid">
-          {info}
-        </ReactTooltip>
-        <h2> WEFI 2020 </h2>
-        <main data-tip data-for="registerTip">Rank: <div className={len}></div>
-          <p>{Store.getState().app.rank} </p>
-        </main>
-        <main>Id:    <p>{Store.getState().app.id}</p></main>
-        <main>Country:   <p>{Store.getState().app.country}</p></main>
-        <main>Index: <p>{Store.getState().app.index}</p></main>
-
-
-        <p>{Store.getState().app.classification}</p>
+    <div>
+      <div className="ToolTipPanel">
+        <div className ="back_ToolTip">
+          <img width="100%" height="100%" src={back} alt="back" />
+        </div>
+        <div  className ="shade_ToolTip">
+           <img  width="100%" height="100%"  src={shade} alt="shade" />
+        </div>
+        <div className ="panel">
+          <div className ="static">
+            <ReactTooltip id="registerTip" place="right" effect="solid">
+              {info}
+            </ReactTooltip>
+            <div><p>Rank:</p></div>
+            <div><p>Index:</p></div>
+            <div><p>Id:</p></div>
+            <div><p>Country:</p></div>
+          </div>
+          <div className="ranked">
+            <div data-tip data-for="registerTip" className={len}></div>
+          </div>
+          <div className ="dymo">
+            <div data-tip data-for="registerTip">{Store.getState().app.rank}</div>
+            <div>{Store.getState().app.index}</div>
+            <div>{Store.getState().app.id}</div>
+            <div>{Store.getState().app.country}</div>
+            </div>
+        </div>
       </div>
+    </div>
     );
   }
   else {
+  //  console.log("no more")
     return (
-      <div></div>
+    <div>
+    </div>
     );
   }
 }
 
-
-export default ToolTip;
+export default ToolhTip;

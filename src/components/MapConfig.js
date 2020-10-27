@@ -140,7 +140,7 @@ const myConfig =
           "icon": "BASE64IMAGE",
           "id": "wefi_customMap",
           "label": "WEFI_kepler",
-          "url": "mapbox://styles/monosaicol/ckfgayc9221jd19pejavyat15"
+          "url": "mapbox://styles/monosaicol/ckgpr096z4laf1bo600vra4te"
         }
       }
     },

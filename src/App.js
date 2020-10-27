@@ -16,6 +16,7 @@ export default function App() {
     <div>
       <Footer/>
       <Map/>
+      <Header/>
     </div>
   );
 }
