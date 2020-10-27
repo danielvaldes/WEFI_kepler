@@ -9,6 +9,7 @@ import {set_legend_action, toggle_tooltip_action} from '../store/Reducers'
 import WEFI_2019_AGX from './data/WEFI.csv.js';
 import Processors from 'kepler.gl/processors';
 import myMapConfig from './MapConfig';
+import myMapConfig_mobile from './MapConfig_mobile';
 import myToolTip from './ToolTip';
 
 //Overwriting Default Components (They are called 'Factory')
@@ -18,7 +19,7 @@ import {
   injectComponents
 } from 'kepler.gl/components';
 
-
+let ConfigMap
 const CustomMapPopoverFactory = () => (NewMapPopoverFactory());
 const myCustomMapPopoverFactory = () => CustomMapPopoverFactory;
 const CustomMapControlFactory = () => (NewMapControlFactory());
@@ -48,6 +49,15 @@ function initMapSetUp()
 {
   console.log("00_This will run only once")
   const data = Processors.processCsvData(WEFI_2019_AGX);
+  if(/Android|webOS|iPhone|iPad|iPod|Opera Mini/i.test(navigator.userAgent))
+  {
+    console.log("here on a mobile")
+    ConfigMap   = myMapConfig_mobile
+  }
+  else {
+    console.log("here on a Desktop")
+    ConfigMap = myMapConfig
+  }
 
   Store.dispatch(
     addDataToMap({
@@ -63,7 +73,7 @@ function initMapSetUp()
         readOnly: true,
 
       },
-      config: myMapConfig
+      config: ConfigMap
     })
   );
 }
@@ -79,7 +89,7 @@ const KeplerGl = injectComponents([
 //to update UI stats based on location clicked
 function handleClick()
 {
-  console.log("did clicked??")
+  //console.log("did clicked??")
   const content = Store.getState().keplerGl.WEFI_2019.visState.clicked
   if(content != null)
   {
