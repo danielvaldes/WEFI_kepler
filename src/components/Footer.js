@@ -8,18 +8,18 @@ import {addDataToMap} from 'kepler.gl/actions';
 import WEFI_2019_AGX from './data/WEFI.csv.js';
 import Processors from 'kepler.gl/processors';
 
-let names =[]
+let names = []
+let nNames = []
 const data = Processors.processCsvData(WEFI_2019_AGX);
 
 
 
 function setFilters(x)
 {
-  let nNames = []
-
+  nNames = []
   if(names.indexOf(x) !== -1)    //In the array
   {
-    names.map(name => {//loop to remove existing name
+    names.forEach(name => {
       if(name === x)
       {
         //console.log(x + " ---- already existed")
@@ -29,14 +29,11 @@ function setFilters(x)
           nNames.push(name)
       }
     })
-
-
     names = nNames
-
   }
   else {
     //FilterNot in the array so We are adding it
-  //  console.log("not in the array")
+    //console.log("not in the array")
     names.push(x)
   }
    UpdateMapFilters()
@@ -134,11 +131,8 @@ function UpdateMapFilters()
     })
   );
 }
-
-
-
 function Footer() {
-  let waterMark = '25%'
+  let waterMark = ''
   if(/Android|webOS|iPhone|iPad|iPod|Opera Mini/i.test(navigator.userAgent))
   {
   //  console.log("here on a mobile")
@@ -148,19 +142,15 @@ function Footer() {
   //  console.log("here on a Desktop")
     waterMark = "waterMark_Desktop"
   }
-
-
   return (
     <div className="footer">
       <div className={waterMark}>
-        <p>   ©<a href="http://www.fundalib.org"> Foundation for the Advancement of Liberty:</a> </p>
-        <p> WEFI 2020</p>
+        <p>©<a href="http://www.fundalib.org"> Foundation for the Advancement of Liberty:</a> </p>
+        <p>WEFI 2020</p>
         <p>Dataviz by
           <a href="https://iu.adventgx.com"> Advent GX</a>
         </p></div>
-
       <div style={{ }} className="legend">
-
             <button  style={{background: '#AD3C5B',border: 'none'}} onClick={() => setFilters("Remarkably low electoral freedom")} className={"rectangle"}>
             </button>
             <button  style={{background: '#CB4D56', border: 'none'}} onClick={() => setFilters("Very low electoral freedom")} className={"rectangle"}>
@@ -182,9 +172,7 @@ function Footer() {
        <p style={{textAlign: 'left'}}>Remarkably low electoral freedom</p>
        <p style={{textAlign: 'right'}}>Outstanding electoral freedom</p>
       </div>
-
     </div>
-
   );
 }
 
