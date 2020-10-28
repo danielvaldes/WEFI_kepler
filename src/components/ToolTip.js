@@ -31,9 +31,6 @@ function ToolhTip(toggle) {
         <div  className ="shade_ToolTip">
            <img  width="100%" height="100%"  src={shade} alt="shade" />
         </div>
-        <div  className ="shade_ToolTip">
-           <img  width="100%" height="100%"  src={shade} alt="shade" />
-        </div>
 
         <div className ="panel">
           <div className="classif">

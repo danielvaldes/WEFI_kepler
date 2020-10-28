@@ -38,7 +38,7 @@
 	padding: 5px;
 	z-index: 100;
 	height: 92px;
-	width: 200px;
+	width: 190px;
 	opacity: .7;
 
 }
@@ -48,7 +48,7 @@
 	top: 67px;
 	height: 30px;
 	width: 195px;
-	opacity: .6;
+	opacity: 0.70;
 
 }
 .back_ToolTip{
@@ -69,7 +69,7 @@
 	z-index: 101;
 	height: 140px;
 	width: 200px;
-	opacity: .6;
+	opacity: .70;
 }
 .logo_mobile{
 		z-index: 150;
@@ -125,7 +125,7 @@
 .ranked {
 		position: absolute;
 		top: 12px;
-		left: 115px;
+		left: 113px;
 		z-index: 160;
 
 }
