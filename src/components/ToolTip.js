@@ -31,7 +31,14 @@ function ToolhTip(toggle) {
         <div  className ="shade_ToolTip">
            <img  width="100%" height="100%"  src={shade} alt="shade" />
         </div>
+        <div  className ="shade_ToolTip">
+           <img  width="100%" height="100%"  src={shade} alt="shade" />
+        </div>
+
         <div className ="panel">
+          <div className="classif">
+              <div>{Store.getState().app.classification}</div>
+          </div>
           <div className ="static">
             <ReactTooltip id="registerTip" place="right" effect="solid">
               {info}

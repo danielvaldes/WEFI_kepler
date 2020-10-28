@@ -24,6 +24,9 @@ function Header() {
         <div  className ="shade_Title">
            <img  width="100%" height="100%" src={shade} alt="shade" />
         </div>
+        <div  className ="shade_Title">
+           <img  width="100%" height="100%" src={shade} alt="shade" />
+        </div>
         <div className ="panel">
           <div>
             <h2> WEFI 2020 </h2>
