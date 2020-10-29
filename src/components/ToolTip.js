@@ -14,14 +14,12 @@ function ToolhTip(toggle) {
     let len = ""
     let  info = "2019 Rank: " + Store.getState().app.rank2019
     let mySizeX = 80+(Store.getState().app.country.length)+"%"
-    console.log(Store.getState().app.country.length)
 
     if(Store.getState().app.rank2019 - Store.getState().app.rank > 0)
     {
        len = "triangleUp";
     }
-    else if (undefined) {
-       len = "missing";
+    else if (Store.getState().app.rank2019 - Store.getState().app.rank === 0) {
        console.log("missing or undefined 2019 rank data")
     }
     else {
