@@ -4,7 +4,6 @@ import React from "react";
 
 import logo_mobile from './images/logo00.png';
 import back from  './images/01_Background.png';
-import shade from  './images/01_Shade.png';
 
 
 
@@ -20,9 +19,6 @@ function Header() {
         </div>
         <div className ="back_Title">
           <img  width="100%" height="100%" src={back} alt="back" />
-        </div>
-        <div  className ="shade_Title">
-           <img  width="100%" height="100%" src={shade} alt="shade" />
         </div>
         <div className ="panel">
           <div>
