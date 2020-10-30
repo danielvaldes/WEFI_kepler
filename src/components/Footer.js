@@ -73,7 +73,7 @@ function UpdateMapFilters()
               "isVisible":true,
               "visConfig":
               {
-                "opacity":.5,
+                "opacity":1,
                 "colorRange":
                 {
                   "name":"RankColorPalette",
@@ -151,19 +151,19 @@ function Footer() {
           <a href="https://iu.adventgx.com"> Advent GX</a>
         </p></div>
       <div style={{ }} className="legend">
-            <button  style={{background: '#AD3C5B',border: 'none'}} onClick={() => setFilters("Remarkably low electoral freedom")} className={"rectangle"}>
+            <button  style={{background: '#A50021',border: 'none'}} onClick={() => setFilters("Remarkably low electoral freedom")} className={"rectangle"}>
             </button>
-            <button  style={{background: '#CB4D56', border: 'none'}} onClick={() => setFilters("Very low electoral freedom")} className={"rectangle"}>
+            <button  style={{background: '#CD171A', border: 'none'}} onClick={() => setFilters("Very low electoral freedom")} className={"rectangle"}>
             </button>
-            <button  style={{background: '#EF767D', border: 'none'}} onClick={() => setFilters("Low electoral freedom")} className={"rectangle"}>
+            <button  style={{background: '#FF5050', border: 'none'}} onClick={() => setFilters("Low electoral freedom")} className={"rectangle"}>
             </button>
-            <button  style={{background: '#EF96A0', border: 'none'}} onClick={() => setFilters("Insufficient electoral freedom")} className={"rectangle"}>
+            <button  style={{background: '#FF7C80', border: 'none'}} onClick={() => setFilters("Insufficient electoral freedom")} className={"rectangle"}>
             </button>
-            <button  style={{background: '#8AC083', border: 'none'}} onClick={() => setFilters("Acceptable electoral freedom")} className={"rectangle"}>
+            <button  style={{background: '#75B558', border: 'none'}} onClick={() => setFilters("Acceptable electoral freedom")} className={"rectangle"}>
             </button>
-            <button  style={{background: '#5AC897', border: 'none'}} onClick={() => setFilters("High electoral freedom")} className={"rectangle"}>
+            <button  style={{background: '#33C073', border: 'none'}} onClick={() => setFilters("High electoral freedom")} className={"rectangle"}>
             </button>
-            <button  style={{background: '#5ABA68', border: 'none'}} onClick={() => setFilters("Very high electoral freedom")} className={"rectangle"}>
+            <button  style={{background: '#33AD33', border: 'none'}} onClick={() => setFilters("Very high electoral freedom")} className={"rectangle"}>
             </button>
             <button  style={{background: '#1A751A', border: 'none'}} onClick={() => setFilters("Outstanding electoral freedom")} className={"rectangle"}>
             </button>

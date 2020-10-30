@@ -17,6 +17,7 @@ const myConfig =
           "type":"geojson",
           "config":
           {
+
             "dataId":"wefi_map",
             "label":"WEFI 2019",
             "color":[255,178,102],
@@ -27,7 +28,7 @@ const myConfig =
             "isVisible":true,
             "visConfig":
             {
-              "opacity":.5,
+              "opacity":1,
               "colorRange":
               {
                 "name":"RankColorPalette",
@@ -51,7 +52,6 @@ const myConfig =
                 "field":null,
                 "color":[255,255,255],
                 "size":50,
-                "z-index": 1,
                 "offset":[0,0],
                 "anchor":"start",
                 "alignment":"center"
@@ -125,6 +125,7 @@ const myConfig =
     "mapStyle":
     {
       "styleType":"wefi_customMap",
+      "topLayerGroups": {"label":true},
       "visibleLayerGroups":
       {
         "label":true,

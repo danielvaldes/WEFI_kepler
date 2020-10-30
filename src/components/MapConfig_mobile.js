@@ -27,7 +27,7 @@ const myConfig =
             "isVisible":true,
             "visConfig":
             {
-              "opacity":.5,
+              "opacity":1,
               "colorRange":
               {
                 "name":"RankColorPalette",
@@ -125,6 +125,7 @@ const myConfig =
     "mapStyle":
     {
       "styleType":"wefi_customMap",
+      "topLayerGroups": {"label":true},
       "visibleLayerGroups":
       {
         "label":true,
