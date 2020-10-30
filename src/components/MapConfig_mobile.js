@@ -125,7 +125,7 @@ const myConfig =
     "mapStyle":
     {
       "styleType":"wefi_customMap",
-      "topLayerGroups":{"label":false},
+      "topLayerGroups":{"label":true},
       "visibleLayerGroups":
       {
         "label":true,
