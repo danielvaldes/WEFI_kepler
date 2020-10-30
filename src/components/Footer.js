@@ -153,19 +153,19 @@ function Footer() {
       <div style={{ }} className="legend">
             <button  style={{background: '#A50021',border: 'none'}} onClick={() => setFilters("Remarkably low electoral freedom")} className={"rectangle"}>
             </button>
-            <button  style={{background: '#CD171A', border: 'none'}} onClick={() => setFilters("Very low electoral freedom")} className={"rectangle"}>
+            <button  style={{background: '#CD1719', border: 'none'}} onClick={() => setFilters("Very low electoral freedom")} className={"rectangle"}>
             </button>
             <button  style={{background: '#FF5050', border: 'none'}} onClick={() => setFilters("Low electoral freedom")} className={"rectangle"}>
             </button>
             <button  style={{background: '#FF7C80', border: 'none'}} onClick={() => setFilters("Insufficient electoral freedom")} className={"rectangle"}>
             </button>
-            <button  style={{background: '#75B558', border: 'none'}} onClick={() => setFilters("Acceptable electoral freedom")} className={"rectangle"}>
+            <button  style={{background: '#33CC33', border: 'none'}} onClick={() => setFilters("Acceptable electoral freedom")} className={"rectangle"}>
             </button>
-            <button  style={{background: '#33C073', border: 'none'}} onClick={() => setFilters("High electoral freedom")} className={"rectangle"}>
+            <button  style={{background: '#009900', border: 'none'}} onClick={() => setFilters("High electoral freedom")} className={"rectangle"}>
             </button>
-            <button  style={{background: '#33AD33', border: 'none'}} onClick={() => setFilters("Very high electoral freedom")} className={"rectangle"}>
+            <button  style={{background: '#008000', border: 'none'}} onClick={() => setFilters("Very high electoral freedom")} className={"rectangle"}>
             </button>
-            <button  style={{background: '#1A751A', border: 'none'}} onClick={() => setFilters("Outstanding electoral freedom")} className={"rectangle"}>
+            <button  style={{background: '#006600', border: 'none'}} onClick={() => setFilters("Outstanding electoral freedom")} className={"rectangle"}>
             </button>
       </div>
       <div className="legendInfo">
