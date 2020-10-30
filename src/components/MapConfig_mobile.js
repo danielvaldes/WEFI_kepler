@@ -35,7 +35,7 @@ const myConfig =
                 "category":"WEFI",
                 //the color order got based on alphabetization
                 //Order:  Acceptable, High Fre, Insufi, Low El, Outstanding, Remarkably, very hight, very low
-                "colors":["#33CC33","#009900","#FF7C80","#FF5050","#006600","#A50021","#008000","#CD1719"]
+                "colors":["#75B558","#33C073","#FF7C80","#FF5050","#1A751A","#A50021","#33AD33","#CD171A"]
               },
               "radius":20,
               "sizeRange":[0,10],
@@ -125,7 +125,7 @@ const myConfig =
     "mapStyle":
     {
       "styleType":"wefi_customMap",
-      "topLayerGroups": {"label":true},
+      "topLayerGroups":{"label":false},
       "visibleLayerGroups":
       {
         "label":true,

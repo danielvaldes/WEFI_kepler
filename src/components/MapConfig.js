@@ -17,7 +17,6 @@ const myConfig =
           "type":"geojson",
           "config":
           {
-
             "dataId":"wefi_map",
             "label":"WEFI 2019",
             "color":[255,178,102],
@@ -36,7 +35,7 @@ const myConfig =
                 "category":"WEFI",
                 //the color order got based on alphabetization
                 //Order:  Acceptable, High Fre, Insufi, Low El, Outstanding, Remarkably, very hight, very low
-                "colors":["#33CC33","#009900","#FF7C80","#FF5050","#006600","#A50021","#008000","#CD1719"]
+                "colors":["#75B558","#33C073","#FF7C80","#FF5050","#1A751A","#A50021","#33AD33","#CD171A"]
               },
               "radius":20,
               "sizeRange":[0,10],
@@ -52,6 +51,7 @@ const myConfig =
                 "field":null,
                 "color":[255,255,255],
                 "size":50,
+                "z-index": 1,
                 "offset":[0,0],
                 "anchor":"start",
                 "alignment":"center"
