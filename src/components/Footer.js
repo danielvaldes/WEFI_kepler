@@ -79,7 +79,7 @@ function UpdateMapFilters()
                   "name":"RankColorPalette",
                   "type":"custom",
                   "category":"WEFI",
-                  "colors":["#75B558","#33C073","#FF7C80","#FF5050","#1A751A","#A50021","#33AD33","#CD171A"]
+                  "colors":["#33CC33","#009900","#FF7C80","#FF5050","#006600","#A50021","#008000","#CD1719"]
                 },
                 "radius":20,
                 "sizeRange":[0,10],
@@ -159,13 +159,13 @@ function Footer() {
             </button>
             <button  style={{background: '#FF7C80', border: 'none'}} onClick={() => setFilters("Insufficient electoral freedom")} className={"rectangle"}>
             </button>
-            <button  style={{background: '#75B558', border: 'none'}} onClick={() => setFilters("Acceptable electoral freedom")} className={"rectangle"}>
+            <button  style={{background: '#33CC33', border: 'none'}} onClick={() => setFilters("Acceptable electoral freedom")} className={"rectangle"}>
             </button>
-            <button  style={{background: '#33C073', border: 'none'}} onClick={() => setFilters("High electoral freedom")} className={"rectangle"}>
+            <button  style={{background: '#009900', border: 'none'}} onClick={() => setFilters("High electoral freedom")} className={"rectangle"}>
             </button>
-            <button  style={{background: '#33AD33', border: 'none'}} onClick={() => setFilters("Very high electoral freedom")} className={"rectangle"}>
+            <button  style={{background: '#008000', border: 'none'}} onClick={() => setFilters("Very high electoral freedom")} className={"rectangle"}>
             </button>
-            <button  style={{background: '#1A751A', border: 'none'}} onClick={() => setFilters("Outstanding electoral freedom")} className={"rectangle"}>
+            <button  style={{background: '#006600', border: 'none'}} onClick={() => setFilters("Outstanding electoral freedom")} className={"rectangle"}>
             </button>
       </div>
       <div className="legendInfo">
