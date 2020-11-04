@@ -148,7 +148,7 @@ function Footer() {
         <p>©<a href="http://www.fundalib.org"> Foundation for the Advancement of Liberty:</a> </p>
         <p>WEFI 2020</p>
         <p>Dataviz by
-          <a href="https://iu.adventgx.com"> Advent GX</a>
+          <a href="https://iu.adventgx.com"> AdventGX</a>
         </p></div>
       <div style={{ }} className="legend">
             <button  style={{background: '#A50021',border: 'none'}} onClick={() => setFilters("Remarkably low electoral freedom")} className={"rectangle"}>
