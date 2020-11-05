@@ -13,14 +13,14 @@ let nNames = []
 const data = Processors.processCsvData(WEFI_2019_AGX);
 
 
-
+//We add and remove from names (so we filter by name)
 function setFilters(x)
 {
   nNames = []
   if(names.indexOf(x) !== -1)    //In the array
   {
     names.forEach(name => {
-      if(name === x)
+      if(name !== x)
       {
         //console.log(x + " ---- already existed")
       }
@@ -39,6 +39,8 @@ function setFilters(x)
    UpdateMapFilters()
 }
 
+
+//TODO: Could be moved to a GeneralManager to handle all updates
 function UpdateMapFilters()
 {
   let currentConfig = {
@@ -134,12 +136,10 @@ function UpdateMapFilters()
 function Footer() {
   let waterMark = ''
   if(/Android|webOS|iPhone|iPad|iPod|Opera Mini/i.test(navigator.userAgent))
-  {
-  //  console.log("here on a mobile")
+  {  //  console.log("here on a mobile")
     waterMark = "waterMark_Mobile"
   }
-  else {
-  //  console.log("here on a Desktop")
+  else {//  console.log("here on a Desktop")
     waterMark = "waterMark_Desktop"
   }
   return (
@@ -151,21 +151,21 @@ function Footer() {
           <a href="https://iu.adventgx.com"> AdventGX</a>
         </p></div>
       <div style={{ }} className="legend">
-            <button  style={{background: '#A50021',border: 'none'}} onClick={() => setFilters("Remarkably low electoral freedom")} className={"rectangle"}>
+            <button  style={{background: '#A50021',border: 'none'}} onClick={() => setFilters("Remarkably low electoral freedom")} className={"ColorFilter"}>
             </button>
-            <button  style={{background: '#CD171A', border: 'none'}} onClick={() => setFilters("Very low electoral freedom")} className={"rectangle"}>
+            <button  style={{background: '#CD171A', border: 'none'}} onClick={() => setFilters("Very low electoral freedom")} className={"ColorFilter"}>
             </button>
-            <button  style={{background: '#FF5050', border: 'none'}} onClick={() => setFilters("Low electoral freedom")} className={"rectangle"}>
+            <button  style={{background: '#FF5050', border: 'none'}} onClick={() => setFilters("Low electoral freedom")} className={"ColorFilter"}>
             </button>
-            <button  style={{background: '#FF7C80', border: 'none'}} onClick={() => setFilters("Insufficient electoral freedom")} className={"rectangle"}>
+            <button  style={{background: '#FF7C80', border: 'none'}} onClick={() => setFilters("Insufficient electoral freedom")} className={"ColorFilter"}>
             </button>
-            <button  style={{background: '#33CC33', border: 'none'}} onClick={() => setFilters("Acceptable electoral freedom")} className={"rectangle"}>
+            <button  style={{background: '#33CC33', border: 'none'}} onClick={() => setFilters("Acceptable electoral freedom")} className={"ColorFilter"}>
             </button>
-            <button  style={{background: '#009900', border: 'none'}} onClick={() => setFilters("High electoral freedom")} className={"rectangle"}>
+            <button  style={{background: '#009900', border: 'none'}} onClick={() => setFilters("High electoral freedom")} className={"ColorFilter"}>
             </button>
-            <button  style={{background: '#008000', border: 'none'}} onClick={() => setFilters("Very high electoral freedom")} className={"rectangle"}>
+            <button  style={{background: '#008000', border: 'none'}} onClick={() => setFilters("Very high electoral freedom")} className={"ColorFilter"}>
             </button>
-            <button  style={{background: '#006600', border: 'none'}} onClick={() => setFilters("Outstanding electoral freedom")} className={"rectangle"}>
+            <button  style={{background: '#006600', border: 'none'}} onClick={() => setFilters("Outstanding electoral freedom")} className={"ColorFilter"}>
             </button>
       </div>
       <div className="legendInfo">

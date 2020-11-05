@@ -6,10 +6,6 @@ import logo_mobile from './images/logo00.png';
 import back from  './images/01_Background.png';
 
 
-
-
-
-//Basically using the header as a testable Action updater (Buttons)
 function Header() {
   return (
     <div>
@@ -19,7 +15,7 @@ function Header() {
           <img top= "0" height="100%" width="100%" src={logo_mobile}  alt="Logo" />
         </div>
         </a>
-        <div className ="back_Title">
+        <div className ="TitleGradient">
           <img  width="100%" height="100%" src={back} alt="back" />
         </div>
         <div className ="panel">

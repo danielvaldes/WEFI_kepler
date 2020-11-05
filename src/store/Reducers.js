@@ -1,6 +1,7 @@
 
 
 //Actions
+//
 export const SET_LEGEND = 'SET_LEGEND';
 export const set_legend_action = (state) => {
   return {
@@ -9,6 +10,7 @@ export const set_legend_action = (state) => {
   }
 }
 
+//Display or hide toolTip
 export const TOGGLE_TOOLTIP = 'TOGGLE_TOOLTIP';
 export const toggle_tooltip_action = (state) => {
   return {

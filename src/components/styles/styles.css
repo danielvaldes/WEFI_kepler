@@ -1,48 +1,22 @@
-.triangleDown {
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 15px 7.5px 0 7.5px;
-	border-color: red transparent transparent transparent;
-}
-.triangleUp {
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 0px 7.5px 15px 7.5px;
-	border-color: transparent transparent lightgreen transparent;
-}
-.rectangle {
+
+.ColorFilter {
 		display: inline-block;
 		width:calc(100%/8);
 		height:25px;
 }
-.rectangle_optional {
-		display: inline-block;
-		width:calc(100%);
-		height:25px;
-}
-.ToolTipPanel {
-	z-index: 100;
-	position: absolute;
-	top: 35px;
-	line-height: 0px;
 
-}
 .HeaderPanel {
 	z-index: 100;
 	position: absolute;
-	line-height: 0px;
 	max-width: 200px;
 }
-.back_Title{
+.TitleGradient{
 		position: absolute;
 	padding: 5px;
 	z-index: 100;
 	height: 92px;
 	width: 190px;
 	opacity: 1;
-
 }
 .shade_Title{
 	z-index: 101;
@@ -51,37 +25,29 @@
 	height: 30px;
 	width: 325px;
 	opacity: .7;
+	background: green;
+	color: green;
+	background-color: green;
 }
-
-
-.shade_TitleOG{
-	z-index: 101;
+.ToolTipGradient{
 	position: absolute;
-	top: 67px;
-	height: 30px;
-	width: 325px;
-	opacity: 0.70;
-
-}
-.back_ToolTip{
-	position: absolute;
-	top: 57px;
+	top: 92px;
 	padding: 5px;
-	z-index: 100;
-	height: 107px;
+	z-index: 50;
+	height: 82px;
 	width: 200px;
-		opacity: 1;
-
+	opacity: .6;
 }
 
-.shade_ToolTip{
+.ToolTipShade{
 	position: absolute;
-	top: 27px;
+	top: 62px;
 	padding: 5px;
 	z-index: 101;
-	height: 140px;
-	width: 272px;
-	opacity: .70;
+	height: 115px;
+	width: 200px;
+	opacity: .80;
+
 }
 .logo_mobile{
 		z-index: 150;
@@ -94,55 +60,64 @@
 		max-width: 218px;
 }
 .panel {
-	z-index: 150;
+	z-index: 250;
 	position: absolute;
 	top: 52px;
 	left: 10px;
-	right: 10px;
 }
-.classif{
+.ToolTipDescription{
 	font-size: 12px;
 	color: white;
 	position: absolute;
+	z-index: 101;
 	line-height: 1;
-	top: 112px;
-	left: 0px;
-	right: 30px;
-	width: 280px;
-
+	padding: 5px;
+	left: 5px;
+	top: 170px;
 
 }
-.static {
+.ToolTipStatic {
+		z-index: 101;
 		font-size: 14px;
 		color: rgba(0,47,91,1);
 		position: absolute;
 		line-height: .15;
-		top: 3px;
-		left: 0px;
-		width: 125px;
-
+		padding: 5px;
+		top: 90px;
+		left: 5px;
 }
-.dymo {
+.ToolTipDynamic {
 		line-height: 1.15;
+		z-index: 101;
 		position: absolute;
 		font-size: 14px;
 		color: white;
 		text-align: left;
-		top: 11px;
+		top: 100px;
 		left: 75px;
-		width: 320px;
-		height: 100px;
+
 }
 .ranked {
 		position: absolute;
-		top: 41px;
+		top: 132px;
 		left: 115px;
 		z-index: 160;
-
-width: 30px;
-
+		width: 30px;
 }
-
+.RankDown {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 15px 7.5px 0 7.5px;
+	border-color: red transparent transparent transparent;
+}
+.RankUp {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0px 7.5px 15px 7.5px;
+	border-color: transparent transparent lightgreen transparent;
+}
 .panel h2
 {
 	font-size: 30px;
