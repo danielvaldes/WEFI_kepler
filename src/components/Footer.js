@@ -20,7 +20,7 @@ function setFilters(x)
   if(names.indexOf(x) !== -1)    //In the array
   {
     names.forEach(name => {
-      if(name !== x)
+      if(name === x)
       {
         //console.log(x + " ---- already existed")
       }
